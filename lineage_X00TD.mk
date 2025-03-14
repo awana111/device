@@ -16,7 +16,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_DISABLE_EPPE := true
-TARGET_INCLUDE_ACCORD := false
+
+# Matrixx
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_CHIPSET := SDM660
+MATRIXX_DISPLAY := 1080x2400
+ 
+# To include Gapps 
 WITH_GMS := false
 
 # Device identifier. This must come after all inclusions.
