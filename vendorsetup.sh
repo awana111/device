@@ -5,7 +5,7 @@ git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_s
 rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
 
 rm -rf device/asus/sdm660-common
-git clone https://github.com/electrolaboratory/common -b aosp device/asus/sdm660-common
+git clone https://github.com/ikwfahmi/common -b aosp device/asus/sdm660-common
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/electrolaboratory/vendor_common -b v vendor/asus
