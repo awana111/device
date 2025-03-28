@@ -6,7 +6,7 @@ rm -rf kernel/asus/sdm660/KernelSU-Next/scripts
 rm -rf kernel/asus/sdm660/KernelSU-Next/docs
 
 rm -rf device/asus/sdm660-common
-git clone https://github.com/ikwfahmi/common -b aosp device/asus/sdm660-common
+git clone --depth=1 https://github.com/ikwfahmi/common -b aosp device/asus/sdm660-common
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/sotodrom/proprietary_vendor_asus -b 15 vendor/asus
