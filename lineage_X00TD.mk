@@ -33,5 +33,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=ASUS_X00TD \
-    RisingChipset="Snapdragon 636"
+    RisingChipset="Snapdragon 636" \
     RisingMaintainer="Kyura"
