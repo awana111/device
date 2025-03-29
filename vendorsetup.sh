@@ -1,9 +1,6 @@
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b wip kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b master kernel/asus/sdm660
 rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
-rm -rf kernel/asus/sdm660/KernelSU-Next/website
-rm -rf kernel/asus/sdm660/KernelSU-Next/scripts
-rm -rf kernel/asus/sdm660/KernelSU-Next/docs
 
 rm -rf device/asus/sdm660-common
 git clone --depth=1 https://github.com/ikwfahmi/common -b rising device/asus/sdm660-common
