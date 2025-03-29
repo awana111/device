@@ -6,7 +6,7 @@ rm -rf device/asus/sdm660-common
 git clone --depth=1 https://github.com/ikwfahmi/common -b rising device/asus/sdm660-common
 
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/electrolaboratory/vendor_common -b v vendor/asus
+git clone --depth=1 https://github.com/ikwfahmi/proprietary_vendor_asus-4.19 -b 15 vendor/asus
 
 rm -rf vendor/lineage-priv/keys
 rm -rf vendor/lineage/signing/keys
