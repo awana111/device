@@ -13,8 +13,9 @@ rm -rf vendor/asus
 git clone --depth=1 https://github.com/electrolaboratory/vendor_common -b v vendor/asus
 
 rm -rf vendor/lineage-priv/keys
-git clone https://github.com/ardia-kun/vendor -b 14-backup sig && cp -R sig/* vendor/
-rm -rf sig
+rm -rf vendor/lineage/signing/keys
+mkdir -p vendor/lineage-priv/keys
+git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
 
 export KBUILD_BUILD_USER=kenkyou
 export BUILD_USER=kenkyou
