@@ -16,10 +16,10 @@ $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_DISABLE_EPPE := true
-PIXELAGE_MAINTAINER := Kyura
+BLISS_BUILDTYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := pixelage_X00TD
+PRODUCT_NAME := bliss_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
