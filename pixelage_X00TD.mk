@@ -16,7 +16,9 @@ $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_DISABLE_EPPE := true
-PIXELAGE_MAINTAINER := Kyura
+
+# HorizonDroid prop
+HORIZON_MAINTAINER := Kyura
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := pixelage_X00TD
