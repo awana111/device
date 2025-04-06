@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_X00TD.mk
+    $(LOCAL_DIR)/horizon_X00TD.mk
