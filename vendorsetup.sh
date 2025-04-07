@@ -4,19 +4,16 @@ rm -rf kernel/asus/sdm660
 git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b stable-release kernel/asus/sdm660
 rm -rf kernel/asus/sdm660/KernelSU-Next/userspace
 
-sed -i 's/CONFIG_DEBUG_INFO=.*/CONFIG_DEBUG_INFO=n/g' kernel/asus/sdm660/arch/arm64/configs/asus/X00TD_defconfig
-
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/Tiktodz/android_device_asus_sdm660-common-4.19 -b 15.2 device/asus/sdm660-common
-cd device/asus/sdm660-common && git revert 56949d983dca547d91dffec95e1ec6c636b239c8 --no-edit
-cd ../../..
+git clone --depth=1 https://github.com/Tiktodz/android_device_asus_sdm660-common-4.19 -b 15.0 device/asus/sdm660-common
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/electrolaboratory/vendor_common -b v vendor/asus
 
 rm -rf vendor/lineage-priv/keys
-git clone https://github.com/ardia-kun/vendor -b 14-backup sig && cp -R sig/* vendor/
-rm -rf sig
+rm -rf vendor/lineage/signing/keys
+mkdir -p vendor/lineage-priv/keys
+git clone https://github.com/electrolaboratory/public-keys vendor/lineage-priv/keys/
 
 export PIXELAGE_BUILD=X00TD
 export BUILD_USER=queen
