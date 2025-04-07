@@ -19,7 +19,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := horizon_X00TD
+PRODUCT_NAME := voltage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
