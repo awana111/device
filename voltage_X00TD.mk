@@ -15,9 +15,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_DISABLE_EPPE := true
-
-# HorizonDroid prop
-HORIZON_MAINTAINER := Kyura
+TARGET_FACE_UNLOCK_SUPPORTED := true
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := horizon_X00TD
