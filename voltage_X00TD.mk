@@ -17,6 +17,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_DISABLE_EPPE := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 VOLTAGE_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := voltage_X00TD
