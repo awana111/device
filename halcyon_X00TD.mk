@@ -14,7 +14,6 @@ $(call inherit-product, vendor/halcyon/config/common.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_DISABLE_EPPE := true
-PIXELAGE_MAINTAINER := Kyura
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := halcyon_X00TD
