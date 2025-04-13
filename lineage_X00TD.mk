@@ -21,6 +21,7 @@ AXION_CAMERA_REAR_INFO := 13,16,5
 AXION_CAMERA_FRONT_INFO := 16
 AXION_MAINTAINER := Kyura
 AXION_PROCESSOR := Qualcomm®_Snapdragon™_636
+BYPASS_CHARGE_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
